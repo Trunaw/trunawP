@@ -13,9 +13,9 @@ export default function Contact() {
         <div className="contact__links">
           {/* Replace these placeholders with your real details */}
           <a href="mailto:your.email@example.com" className="btn btn-primary">
-            your.email@example.com
+            trunghoang13082005@gmail.com
           </a>
-          <a href="https://github.com/yourusername" target="_blank" rel="noreferrer" className="btn btn-ghost">
+          <a href="https://github.com/Trunaw" target="_blank" rel="noreferrer" className="btn btn-ghost">
             GitHub
           </a>
           <a href="https://linkedin.com/in/yourusername" target="_blank" rel="noreferrer" className="btn btn-ghost">
