@@ -94,7 +94,7 @@ export default function Hero() {
         </div>
 
         <h1 className="hero__headline">
-          Mobile developer shipping apps with <span className="accent">Kotlin &amp; Flutter</span>
+          Mobile developer shipping apps with <span className="accent">Kotlin, Flutter, React &amp; TypeScript</span>
         </h1>
 
         <p className="hero__sub">

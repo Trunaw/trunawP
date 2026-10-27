@@ -37,9 +37,14 @@ export default function Projects() {
                   </a>
                 ) : (
                   <span className="project-card__link project-card__link--disabled">
-                    Repo coming soon
+                    {project.privateRepo ? "Private repo" : "Repo coming soon"}
                   </span>
                 )}
+                {project.links?.map((link) => (
+                  <a key={link.url} href={link.url} target="_blank" rel="noreferrer" className="project-card__link">
+                    {link.label} &rarr;
+                  </a>
+                ))}
                 {project.demo && (
                   <a href={project.demo} target="_blank" rel="noreferrer" className="project-card__link">
                     Live demo &rarr;

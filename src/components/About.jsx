@@ -1,7 +1,7 @@
 const skillGroups = [
   {
     label: "Mobile",
-    items: ["Kotlin", "Jetpack Compose", "MVVM", "CameraX", "Flutter"],
+    items: ["Kotlin", "Jetpack Compose", "MVVM", "CameraX", "Flutter", "React Native"],
   },
   {
     label: "Backend & Data",
@@ -9,7 +9,7 @@ const skillGroups = [
   },
   {
     label: "Web",
-    items: ["React", "JavaScript", "HTML/CSS"],
+    items: ["React", "TypeScript", "JavaScript", "HTML/CSS"],
   },
   {
     label: "Tools & Cloud",

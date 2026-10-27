@@ -1,18 +1,20 @@
 /* ---------- Design tokens ---------- */
 :root {
-  --bg: #0a0a0f;
-  --bg-elevated: #131319;
-  --bg-card: #16161f;
-  --text-primary: #f5f5f7;
-  --text-secondary: #9797a5;
-  --text-tertiary: #6b6b78;
-  --accent: #4c8dff;
-  --accent-light: #7ab0ff;
-  --accent-soft: rgba(76, 141, 255, 0.12);
-  --border: rgba(255, 255, 255, 0.08);
-  --border-strong: rgba(255, 255, 255, 0.14);
-  --shadow: 0 20px 40px rgba(0, 0, 0, 0.45);
-  --shadow-nav: 0 8px 24px rgba(0, 0, 0, 0.35);
+  --bg: #1f2544;
+  --bg-elevated: #2a3155;
+  --bg-card: #363d66;
+  --text-primary: #fbf2f8;
+  --text-secondary: #c2c3dc;
+  --text-tertiary: #8f92b3;
+  --accent: #81689d;
+  --accent-light: #ffd0ec;
+  --accent-soft: rgba(255, 208, 236, 0.12);
+  --on-accent: #ffffff;
+  --on-accent-hover: #1f2544;
+  --border: rgba(255, 208, 236, 0.1);
+  --border-strong: #474f7a;
+  --shadow: 0 20px 40px rgba(12, 15, 32, 0.55);
+  --shadow-nav: 0 8px 24px rgba(12, 15, 32, 0.45);
   --nav-height: 100px;
   --radius-sm: 8px;
   --radius-md: 14px;
@@ -23,19 +25,22 @@
 }
 
 [data-theme="light"] {
-  --bg: #fafafa;
+  --bg: #fff6fb;
   --bg-elevated: #ffffff;
   --bg-card: #ffffff;
-  --text-primary: #14141a;
-  --text-secondary: #55555f;
-  --text-tertiary: #85858f;
-  --accent: #2563eb;
-  --accent-light: #3b82f6;
-  --accent-soft: rgba(37, 99, 235, 0.08);
-  --border: rgba(0, 0, 0, 0.08);
-  --border-strong: rgba(0, 0, 0, 0.14);
-  --shadow: 0 20px 40px rgba(20, 20, 26, 0.08);
-  --shadow-nav: 0 6px 20px rgba(20, 20, 26, 0.07);
+  --text-primary: #1f2544;
+  --text-secondary: #474f7a;
+  --text-tertiary: #7a7f9e;
+  /* Pink is unreadable as text on white, so light mode uses a deeper purple for text accents */
+  --accent: #81689d;
+  --accent-light: #6a5287;
+  --accent-soft: rgba(255, 208, 236, 0.5);
+  --on-accent: #ffffff;
+  --on-accent-hover: #ffffff;
+  --border: rgba(31, 37, 68, 0.1);
+  --border-strong: rgba(31, 37, 68, 0.18);
+  --shadow: 0 20px 40px rgba(31, 37, 68, 0.08);
+  --shadow-nav: 0 6px 20px rgba(31, 37, 68, 0.07);
   color-scheme: light;
 }
 
@@ -156,11 +161,12 @@ section {
 
 .btn-primary {
   background: var(--accent);
-  color: #fff;
+  color: var(--on-accent);
 }
 
 .btn-primary:hover {
   background: var(--accent-light);
+  color: var(--on-accent-hover);
 }
 
 .btn-ghost {
